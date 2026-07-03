@@ -1,0 +1,20 @@
+{
+  "default": {
+    "allowed_paths": ["."],
+    "allowed_skills": ["system.*", "user.*", "file.*", "email.draft", "calendar.draft", "web.fetch"],
+    "blocked_skills": ["file.delete", "script.*"]
+  },
+  "users": {
+    "finance-user": {
+      "allowed_paths": ["finance"],
+      "allowed_skills": ["system.*", "user.*", "file.*", "email.*", "calendar.*"],
+      "blocked_skills": ["file.delete", "script.*"]
+    },
+    "admin-user": {
+      "allowed_paths": ["."],
+      "allowed_skills": ["*"],
+      "blocked_skills": ["file.delete"]
+    }
+  }
+}
+

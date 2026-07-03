@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+
+# Runtime data
+data/logs/*
+!data/logs/.gitkeep
+data/backups/*
+!data/backups/.gitkeep
+data/calendar/*
+!data/calendar/.gitkeep
+
+# Demo workspace keeps only curated sample files
+data/workspace/*
+!data/workspace/contract-notes.txt
+!data/workspace/customer-followup.md
+!data/workspace/project-brief.md
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+

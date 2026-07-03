@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Enterprise Agent MVP</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="chat-panel">
+        <header class="topbar">
+          <div>
+            <h1>Enterprise Agent MVP</h1>
+            <p>受限文件读取、草稿动作、审计日志</p>
+          </div>
+          <button id="refreshAudit" type="button" title="刷新审计日志">Refresh</button>
+        </header>
+
+        <div id="messages" class="messages" aria-live="polite"></div>
+
+        <form id="chatForm" class="composer">
+          <input
+            id="messageInput"
+            name="message"
+            autocomplete="off"
+            placeholder="比如：总结项目资料"
+          />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <aside class="side-panel">
+        <section>
+          <h2>Skills</h2>
+          <div id="skills" class="list"></div>
+        </section>
+
+        <section>
+          <h2>Last Result</h2>
+          <div id="lastResult" class="result-panel">
+            <pre class="json-box">{}</pre>
+          </div>
+        </section>
+
+        <section>
+          <h2>Audit</h2>
+          <div id="audit" class="audit-list"></div>
+        </section>
+      </aside>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
